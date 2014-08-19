@@ -1,0 +1,110 @@
+.header-home {
+	width: 100vw;
+	height: 10vh;
+}
+
+.home-title{
+	top: 50%;
+	/*left: 50%;*/
+	width: 100%;
+	/*margin-left: -25%;*/
+	position: absolute;
+	height: 20%;
+	margin-top: -10%;
+	text-align: center;
+	color: #00FFD3;
+	opacity: 1 !important;
+}
+
+.home-title h1{
+	font-size: 3em;
+	/*font-size: 6vw;*/
+	margin-bottom: 0px;
+}
+
+.home-title h3 {
+	font-size: 1.17em;
+	/*font-size: 1.8vw;*/
+	margin-top: 0px;
+}
+
+.home-title .arrow {
+	height: 5vh;
+	width: 5vw;
+	margin-left: 46.5vw;
+}
+
+.home-title .arrow a{
+	color: #00FFD3;
+}
+.home-title .arrow a:hover{
+	color:#78F5FF;
+}
+
+.home-title .arrow:hover {
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+	-webkit-transform: translate(0, 1em);
+	-moz-transform: translate(0, 1em);
+	-o-transform: translate(0, 1em);
+	-ms-transform: translate(0, 1em);
+	transform: translate(0, 1em);
+}
+
+.home-title .arrow .img {
+	height: 100%;
+	width: auto;
+}
+
+.bg {
+	position: absolute;
+	z-index: -1000;
+	background: url(bg.jpg) no-repeat center center fixed; 
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+ 	width: 100vw;
+ 	height: 100vh;
+}
+
+.footer-home {
+	width: 100vw;
+	height: 5vh;
+	color: white;
+}
+
+.footer-home .right{
+	float: right;
+	margin-right: 1%;
+	width: 49%;
+}
+
+.footer-home .left{
+	float: left;
+	margin-left: 1%;
+	width: 49%;
+}
+.footer-home .left a{
+	float: left;
+	margin-left: 20px;
+	width: 49%;
+	color: #00FFD3;
+	text-decoration: none;
+}
+.footer-home .left a:hover {
+	color:#78F5FF;
+}
+
+.footer-home .right a{
+	float: right;
+	text-align: right;
+	color: #00FFD3;
+	margin-right: 20px;
+}
+.footer-home .right a:hover{
+	/*color:#1489CC;*/
+	color:#78F5FF;
+}

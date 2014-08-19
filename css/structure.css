@@ -1,0 +1,85 @@
+.header{
+	width: 100vw;
+	height: 10vh;
+    /*border-bottom: thin solid #3D7799;*/
+}
+
+.header .name {
+	width:25vw;
+	min-width: 320px;
+	text-align: center;
+	display: inline-block;
+}
+.header .name h1{
+	margin: 0 0 0 0;
+	color: #00FFD3;
+	padding-top: 2vh;
+}
+.header a{
+	text-decoration: none;
+}
+.header .name h1:hover{
+	color:#78F5FF;
+}
+.header .nav {
+	padding-top: 3.5vh;
+	float:right;
+	width: 320px;
+	text-align: center;
+	font-weight: bold;
+}
+.header .nav a{
+	color: #00FFD3;
+	text-decoration: none;
+	padding-right: 2vw;
+}
+.header .nav a:hover {
+	color:#78F5FF;
+}
+
+.content {
+	width: 100vw;
+	height: 83vh;
+	overflow-y: scroll;
+}
+
+.footer {
+	width: 100vw;
+	height: 2.5vh;
+	color: white;
+	/*border-top: thin solid #3D7799;*/
+	font-size:1em;
+	padding-top: 2.5vh;
+}
+
+.footer .right{
+	float: right;
+	margin-right: 1%;
+	width: 20%;
+	min-width: 80px;
+}
+
+.footer .left{
+	float: left;
+	margin-left: 1%;
+	width: 70%;
+}
+.footer .left a{
+	float: left;
+	color: #00FFD3;
+	text-decoration: none;
+}
+.footer .left a:hover {
+	color:#78F5FF;
+}
+
+.footer .right a{
+	float: right;
+	text-align: right;
+	color: #00FFD3;
+	margin-right: 2vw;
+}
+.footer .right a:hover{
+	/*color:#1489CC;*/
+	color:#78F5FF;
+}

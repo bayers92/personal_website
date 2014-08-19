@@ -1,0 +1,22 @@
+.tumblr_posts {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+ol {
+	list-style:none;
+	list-style-type: none;
+	width: 50%;
+	min-width: 320px !important;
+	padding: 0px 0px 0px 0px;
+}
+li {
+	padding-top: 25px !important;
+	padding-bottom: 25px !important;
+	border-bottom: thin solid #00FFD3;
+}
+
+.tumblr_posts img {
+	max-width: 100%;
+	max-height: 100%;
+}

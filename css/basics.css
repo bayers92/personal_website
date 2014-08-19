@@ -1,0 +1,34 @@
+.color-primary-0 { color: #2B4C6F }
+.color-primary-1 { color: #738CA6 }
+.color-primary-2 { color: #4A6A8A }
+.color-primary-3 { color: #133253 }
+.color-primary-4 { color: #041D37 }
+
+html { 
+}
+
+body {
+	color: black;
+	font-weight: 200;
+	font-size: 1em;
+	font-family: 'Raleway', 'Arial', sans-serif !important;
+	margin: 0 0 0 0;
+	border: 0 0 0 0;
+}
+
+a {
+	text-decoration: none;
+	color: #00FFD3;
+}
+a:hover{
+	color:#78F5FF;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+}

@@ -1,0 +1,58 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h3 {
+	margin: 5px 5px 5px 5px;
+}
+
+.entry {
+	width: 80%;
+	height: auto;
+	border-bottom: solid thin gray; 
+	padding: 3% 10% 3% 10%;
+	display: left;
+	display: inline-block;
+}
+
+.entry .source {
+	margin-left: 5px;
+	font-style: italic;
+	color: #A3A3A3;
+
+}
+.entry .title {
+
+}
+.entry .description{
+	margin-left: 5px; 
+
+}
+.entry .date {
+	margin: 10px 10px 10px 10px;
+	font-style: italic; 
+	color: #D1D1D1;
+}
+
+img{
+	display: none;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  top: 0;
+}
+
+.page-header {
+	color: #00ffd3;
+	text-align: center;
+	border-bottom: solid thin gray;
+}

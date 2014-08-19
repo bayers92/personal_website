@@ -1,0 +1,44 @@
+.about-container {
+	width: 70vw;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 300px;
+}
+
+.about-container .pic-container{
+	width: 100%;
+	/*height: 25vw;*/
+	max-width: 900px;
+	min-width: 300px;
+	max-height: 400px;
+	min-height: 100px;
+}
+
+.about-container .pic-container .pic img{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.about-container .about-text .third {
+	float: left;
+	width: 92%;
+	margin: 0% 4% 0% 4%;
+	min-width: 300px;
+
+}
+.about-container .about-text .third p {
+	margin: 0px 0px 0px 0px;
+}
+.about-container .about-text .third .p2 {
+	margin: 0px 0px 0px 0px;
+	font-size: 1.2em;
+}
+.about-container .about-text .third .p3 {
+	margin: 0px 0px 10px 0px;
+	font-size: 0.9em;
+}
+
+.about-container .resume {
+	font-size: 1.5em;
+}
