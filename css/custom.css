@@ -163,6 +163,12 @@ html {
 body {
   color: var(--ink);
   background: #ffffff;
+  opacity: 1 !important;
+  margin-top: 0 !important;
+}
+
+body #mainnav {
+  margin-top: 0 !important;
 }
 
 a {
