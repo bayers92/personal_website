@@ -1,0 +1,56 @@
+
+          <!-- PROJECT -->
+          <div class="row project-row-padding">
+            <div class="col-md-6"><a href="wwww.goodeesclothing.com"><img alt="Goodees Clothing" src="images/goodees-LOGO.jpg" class="fit-width"></a></div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class = "project-description-div">
+                <h4>Goodees Clothing</h4><p><i> Founder, Acquired 2015 </i></p>
+                <p> 
+                  During college I founded a custom clothing and lifestyle company. It started with custom designed lacrosse shorts and over 4 years morphed into a company branded with a cute turtle logo, producing clothing designed to mimic Vineyard Vines style without the price tag.
+                </p>
+                <p> 
+                  This was my first exposure into the world of startups and I was instantly hooked. The constant challenges and creativity required to grow the company was enthralling and ultimately lead me to pursue my MBA so that I can apply these skills to the healthcare industry.
+                </p> 
+              </div>
+            </div>
+          </div>
+
+
+          <!-- PROJECT -->
+          <div class="row">
+            <div class="col-md-5">
+              <div class = "project-description-div">
+                <h4>Patrick Wiese Foundation</h4>
+                <p><i> Board Member </i></p>
+                <p>
+                  In 2013, my best friend was diagnosed with osteosarcoma. He founded <a href="http://patrickwiesefoundation.org/"> The Patrick Wiese Foundation’s (PWF) </a>with the goal to help children and young adults with cancer in our Central New York community. 
+                </p>
+                <p>
+                  The foundation coordinates educational support to students undergoing surgery and chemotherapy so they do not fall behind in school during treatment, as well as scholarship opportunities.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <a href="http://patrickwiesefoundation.org/"><img alt="Patrick Wiese Foundation" src="images/PWF-LOGO.png" class="fit-width"></a>
+            </div>
+          </div>
+
+
+          <!-- PROJECT -->
+          <div class="row project-row-padding">
+            <div class="col-md-6"><a href="www.brandclub.co"><img alt="Brand Club" src="images/brandClub-LOGO.png" class="fit-width"></a></div>
+            <div class="col-md-5 col-md-offset-1">
+              <div class = "project-description-div">
+                <h4>BrandClub</h4><p><i> Co-Founder </i></p>
+                <p> 
+                  During my year at business school, I had a number of friends ask me to build them a personal website similar to this one. After seeing the positive response from recruiters, I realized students on the job hunt need a way to portray more of their personality than is afforded by LinkedIn or a CV.
+                </p> 
+                <p>
+                  I partnered with a classmate to run business development and sales while I built a Ruby on Rails web platform that allows students to build a personally branded website very similar to this one. We found strong interest from business schools as a way to help their students differentiate themselves. 
+                </p>
+<!--                 <p>
+                  Given the time demands of 2nd year medical school and other interests I am no longer actively involved with the tech development.
+                </p> -->
+              </div>
+            </div>
+          </div>
