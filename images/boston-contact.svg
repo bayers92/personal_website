@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Boston skyline and Charles River</title>
+  <desc id="desc">A black and white illustration of the Boston skyline, the Charles River, and the Zakim Bridge.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3f5f6"/>
+      <stop offset="0.58" stop-color="#d8dde0"/>
+      <stop offset="1" stop-color="#b7c0c6"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#5e6870"/>
+      <stop offset="0.5" stop-color="#9da6ab"/>
+      <stop offset="1" stop-color="#4b555d"/>
+    </linearGradient>
+    <filter id="soften" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#sky)"/>
+  <g opacity="0.16" fill="none" stroke="#1c252b" stroke-width="2">
+    <path d="M0 162c120 28 223 26 338-6s244-34 377-2 290 23 485-36"/>
+    <path d="M0 228c164 26 300 14 408-21 95-31 215-23 360 19 135 38 279 34 432-10"/>
+  </g>
+  <g fill="#111820" opacity="0.88">
+    <rect x="64" y="374" width="54" height="154"/>
+    <rect x="134" y="326" width="78" height="202"/>
+    <rect x="228" y="354" width="46" height="174"/>
+    <rect x="292" y="292" width="104" height="236"/>
+    <rect x="414" y="344" width="68" height="184"/>
+    <rect x="499" y="250" width="86" height="278"/>
+    <path d="M622 528V334h72v-44h58v238z"/>
+    <rect x="777" y="316" width="72" height="212"/>
+    <rect x="870" y="266" width="94" height="262"/>
+    <rect x="982" y="376" width="56" height="152"/>
+    <rect x="1056" y="338" width="82" height="190"/>
+  </g>
+  <g fill="#111820" opacity="0.82">
+    <path d="M116 374h66l-33-70z"/>
+    <path d="M511 250h62l-31-72z"/>
+    <path d="M887 266h60l-30-82z"/>
+  </g>
+  <g fill="none" stroke="#111820" stroke-linecap="round" stroke-linejoin="round" opacity="0.78">
+    <path d="M760 526C864 408 943 342 1070 290" stroke-width="10"/>
+    <path d="M887 524C933 422 997 346 1110 285" stroke-width="7"/>
+    <path d="M1032 526l38-236 42 236" stroke-width="8"/>
+    <path d="M944 468h142" stroke-width="5"/>
+    <path d="M900 504h238" stroke-width="5"/>
+    <path d="M1026 342l-84 126" stroke-width="4"/>
+    <path d="M1076 342l-72 126" stroke-width="4"/>
+    <path d="M1112 340l-40 128" stroke-width="4"/>
+  </g>
+  <rect y="528" width="1200" height="232" fill="url(#river)"/>
+  <g opacity="0.22" fill="none" stroke="#fff" stroke-width="3" filter="url(#soften)">
+    <path d="M-20 596c108-26 219-28 332-5 116 24 244 24 382 0 154-27 328-18 526 28"/>
+    <path d="M-18 662c138-30 278-35 420-14 146 22 269 18 369-12 140-43 288-36 449 20"/>
+    <path d="M85 716c184-34 360-34 528 0 174 34 338 28 492-20"/>
+  </g>
+</svg>
