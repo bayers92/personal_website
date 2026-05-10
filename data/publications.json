@@ -1,106 +1,376 @@
 {
   "source": "https://scholar.google.com/citations?hl=en&user=38iwVeUAAAAJ&view_op=list_works&sortby=pubdate",
-  "updatedAt": "2026-05-10T16:50:23.031Z",
+  "sources": {
+    "newest": "https://scholar.google.com/citations?hl=en&user=38iwVeUAAAAJ&view_op=list_works&sortby=pubdate",
+    "cited": "https://scholar.google.com/citations?hl=en&user=38iwVeUAAAAJ&view_op=list_works&sortby=cited"
+  },
+  "updatedAt": "2026-05-10T19:19:54.923Z",
   "publications": [
     {
       "title": "Left Ventricular Geometry Improves Prediction of Sex-Specific Post-TAVR Remodeling in Aortic Stenosis",
       "year": "2026",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:D03iK_w7-QYC"
     },
     {
       "title": "Cardiovascular medicine and surgery",
       "year": "2026",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:a0OBvERweLwC"
     },
     {
       "title": "Continuous Determination of Respiratory Rate in Hospitalized Patients using Machine Learning Applied to Electrocardiogram Telemetry",
       "year": "2025",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:yD5IFk8b50cC"
     },
     {
       "title": "A Change of Heart: siRNA-Mediated Gene Silencing and Delivery during Ex Vivo Heart Perfusion for Organ Optimization",
       "year": "2025",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:cFHS6HbyZ2cC"
     },
     {
       "title": "An open-source, automated machine learning approach for large-scale image retrieval for thoracic aorta analysis studies",
       "year": "2025",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:4OULZ7Gr8RgC"
     },
     {
       "title": "Video kinematics of an unloaded, ex-vivo beating heart can predict future loaded heart function",
       "year": "2025",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:dfsIfKJdRG4C"
     },
     {
       "title": "Integrating soft robotics and computational models to study left atrial hemodynamics and device testing in sinus rhythm and atrial fibrillation",
       "year": "2025",
+      "citations": 5,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:fPk4N6BV_jEC"
     },
     {
       "title": "An Improved Retrograde Cardioplegia Catheter Design to Better Protect the Right Heart during Cardiopulmonary Bypass",
       "year": "2025",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:u_35RYKgDlwC"
     },
     {
       "title": "Percutaneous Single Cannula Pulsatile Flow in the Pulmonary Artery to Offload the Right Ventricle",
       "year": "2025",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:zA6iFVUQeVQC"
     },
     {
       "title": "A Beating‐Heart Procedure with Soft Robotic Guidance",
       "year": "2025",
+      "citations": 5,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:rO6llkc54NcC"
     },
     {
       "title": "Prebypass critical closing pressure predicts acute kidney injury after cardiopulmonary bypass",
       "year": "2025",
+      "citations": 2,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:3s1wT3WcHBgC"
     },
     {
       "title": "SmartSleeve: A sutureless, soft robotic epicardial device that enables switchable on-off drug delivery in response to epicardial ECG sensing",
       "year": "2024",
+      "citations": 10,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:HoB7MX3m0LUC"
     },
     {
       "title": "Unlocking telemetry potential: Self-supervised learning for continuous clinical electrocardiogram monitoring",
       "year": "2024",
+      "citations": 4,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:ZHo1McVdvXMC"
     },
     {
       "title": "Pulsatile ECMO: The future of mechanical circulatory support for severe cardiogenic shock",
       "year": "2024",
+      "citations": 9,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:pqnbT2bcN3wC"
     },
     {
       "title": "Non-Invasive Beating Heart Video Kinematics Correlate with Cardiac Function During Ex-Vivo Perfusion",
       "year": "2024",
+      "citations": 0,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:g5m5HwL7SMYC"
     },
     {
       "title": "Robotic right ventricle is a biohybrid platform that simulates right ventricular function in (patho) physiological conditions and intervention",
       "year": "2023",
+      "citations": 29,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:M05iB0D1s5AC"
     },
     {
       "title": "Sustaining the gains: Reducing unnecessary computed tomography scans in pediatric trauma patients",
       "year": "2023",
+      "citations": 26,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:ldfaerwXgEUC"
     },
     {
       "title": "Left subclavian artery coverage is not associated with neurological deficits in trauma patients undergoing thoracic endovascular repair",
       "year": "2022",
+      "citations": 9,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:70eg2SAEIzsC"
     },
     {
       "title": "Patient-reported outcomes measurement information system (PROMIS) in left ventricular assist devices",
       "year": "2022",
+      "citations": 6,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:hMod-77fHWUC"
     },
     {
       "title": "Extended reality platforms: a technological solution still finding the right problem",
       "year": "2022",
+      "citations": 2,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:YFjsv_pBGBYC"
     }
-  ]
+  ],
+  "publicationsBySort": {
+    "newest": [
+      {
+        "title": "Left Ventricular Geometry Improves Prediction of Sex-Specific Post-TAVR Remodeling in Aortic Stenosis",
+        "year": "2026",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:D03iK_w7-QYC"
+      },
+      {
+        "title": "Cardiovascular medicine and surgery",
+        "year": "2026",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:a0OBvERweLwC"
+      },
+      {
+        "title": "Continuous Determination of Respiratory Rate in Hospitalized Patients using Machine Learning Applied to Electrocardiogram Telemetry",
+        "year": "2025",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:yD5IFk8b50cC"
+      },
+      {
+        "title": "A Change of Heart: siRNA-Mediated Gene Silencing and Delivery during Ex Vivo Heart Perfusion for Organ Optimization",
+        "year": "2025",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:cFHS6HbyZ2cC"
+      },
+      {
+        "title": "An open-source, automated machine learning approach for large-scale image retrieval for thoracic aorta analysis studies",
+        "year": "2025",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:4OULZ7Gr8RgC"
+      },
+      {
+        "title": "Video kinematics of an unloaded, ex-vivo beating heart can predict future loaded heart function",
+        "year": "2025",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:dfsIfKJdRG4C"
+      },
+      {
+        "title": "Integrating soft robotics and computational models to study left atrial hemodynamics and device testing in sinus rhythm and atrial fibrillation",
+        "year": "2025",
+        "citations": 5,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "title": "An Improved Retrograde Cardioplegia Catheter Design to Better Protect the Right Heart during Cardiopulmonary Bypass",
+        "year": "2025",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "title": "Percutaneous Single Cannula Pulsatile Flow in the Pulmonary Artery to Offload the Right Ventricle",
+        "year": "2025",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:zA6iFVUQeVQC"
+      },
+      {
+        "title": "A Beating‐Heart Procedure with Soft Robotic Guidance",
+        "year": "2025",
+        "citations": 5,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:rO6llkc54NcC"
+      },
+      {
+        "title": "Prebypass critical closing pressure predicts acute kidney injury after cardiopulmonary bypass",
+        "year": "2025",
+        "citations": 2,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:3s1wT3WcHBgC"
+      },
+      {
+        "title": "SmartSleeve: A sutureless, soft robotic epicardial device that enables switchable on-off drug delivery in response to epicardial ECG sensing",
+        "year": "2024",
+        "citations": 10,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:HoB7MX3m0LUC"
+      },
+      {
+        "title": "Unlocking telemetry potential: Self-supervised learning for continuous clinical electrocardiogram monitoring",
+        "year": "2024",
+        "citations": 4,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:ZHo1McVdvXMC"
+      },
+      {
+        "title": "Pulsatile ECMO: The future of mechanical circulatory support for severe cardiogenic shock",
+        "year": "2024",
+        "citations": 9,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:pqnbT2bcN3wC"
+      },
+      {
+        "title": "Non-Invasive Beating Heart Video Kinematics Correlate with Cardiac Function During Ex-Vivo Perfusion",
+        "year": "2024",
+        "citations": 0,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "title": "Robotic right ventricle is a biohybrid platform that simulates right ventricular function in (patho) physiological conditions and intervention",
+        "year": "2023",
+        "citations": 29,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:M05iB0D1s5AC"
+      },
+      {
+        "title": "Sustaining the gains: Reducing unnecessary computed tomography scans in pediatric trauma patients",
+        "year": "2023",
+        "citations": 26,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:ldfaerwXgEUC"
+      },
+      {
+        "title": "Left subclavian artery coverage is not associated with neurological deficits in trauma patients undergoing thoracic endovascular repair",
+        "year": "2022",
+        "citations": 9,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:70eg2SAEIzsC"
+      },
+      {
+        "title": "Patient-reported outcomes measurement information system (PROMIS) in left ventricular assist devices",
+        "year": "2022",
+        "citations": 6,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:hMod-77fHWUC"
+      },
+      {
+        "title": "Extended reality platforms: a technological solution still finding the right problem",
+        "year": "2022",
+        "citations": 2,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&sortby=pubdate&citation_for_view=38iwVeUAAAAJ:YFjsv_pBGBYC"
+      }
+    ],
+    "cited": [
+      {
+        "title": "Venoarterial-extracorporeal membrane oxygenation without routine systemic anticoagulation decreases adverse events",
+        "year": "2020",
+        "citations": 161,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:9ZlFYXVOiuMC"
+      },
+      {
+        "title": "Using machine learning to improve survival prediction after heart transplantation",
+        "year": "2021",
+        "citations": 59,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "title": "Implantation of a fully magnetically levitated left ventricular assist device using a sternal-sparing surgical technique",
+        "year": "2020",
+        "citations": 59,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:mVmsd5A6BfQC"
+      },
+      {
+        "title": "Complete Sternal-Sparing HeartMate 3áImplantation: A Case Series of 10áConsecutive Patients",
+        "year": "2019",
+        "citations": 45,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:d1gkVwhDpl0C"
+      },
+      {
+        "title": "Predicting survival after extracorporeal membrane oxygenation by using machine learning",
+        "year": "2020",
+        "citations": 43,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:j3f4tGmQtD8C"
+      },
+      {
+        "title": "Patient and physician perspectives on public reporting of mortality ratings for percutaneous coronary intervention in New York State",
+        "year": "2017",
+        "citations": 32,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:2osOgNQ5qMEC"
+      },
+      {
+        "title": "Robotic right ventricle is a biohybrid platform that simulates right ventricular function in (patho) physiological conditions and intervention",
+        "year": "2023",
+        "citations": 29,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:M05iB0D1s5AC"
+      },
+      {
+        "title": "Chopart amputation: questioning the clinical efficacy of a long-standing surgical option for diabetic foot infection",
+        "year": "2020",
+        "citations": 29,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:r0BpntZqJG4C"
+      },
+      {
+        "title": "Sustaining the gains: Reducing unnecessary computed tomography scans in pediatric trauma patients",
+        "year": "2023",
+        "citations": 26,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:ldfaerwXgEUC"
+      },
+      {
+        "title": "Complete sternal-sparing approach improves outcomes for left ventricular assist device implantation in patients with history of prior sternotomy",
+        "year": "2020",
+        "citations": 19,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:L8Ckcad2t8MC"
+      },
+      {
+        "title": "Enhanced recovery after surgery in patients implanted with left ventricular assist device",
+        "year": "2021",
+        "citations": 18,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "title": "Regional nerve block decreases opioid use after complete sternal‐sparing left ventricular assist device implantation",
+        "year": "2019",
+        "citations": 18,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:MXK_kJrjxJIC"
+      },
+      {
+        "title": "Study results suggest less invasive HeartMate 3 implantation is a safe and effective approach for obese patients",
+        "year": "2021",
+        "citations": 12,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:ns9cj8rnVeAC"
+      },
+      {
+        "title": "Opioid consumption after carotid revascularization",
+        "year": "2020",
+        "citations": 12,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:QIV2ME_5wuYC"
+      },
+      {
+        "title": "SmartSleeve: A sutureless, soft robotic epicardial device that enables switchable on-off drug delivery in response to epicardial ECG sensing",
+        "year": "2024",
+        "citations": 10,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:HoB7MX3m0LUC"
+      },
+      {
+        "title": "Complete sternal-sparing left ventricular assist device implantation is associated with improved postoperative mobility",
+        "year": "2021",
+        "citations": 10,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "title": "Association between the atherosclerotic disease risk score and carotid artery stenosis",
+        "year": "2021",
+        "citations": 10,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:isC4tDSrTZIC"
+      },
+      {
+        "title": "MELD‐XI is predictive of mortality in venoarterial extracorporeal membrane oxygenation",
+        "year": "2020",
+        "citations": 10,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:RHpTSmoSYBkC"
+      },
+      {
+        "title": "Pulsatile ECMO: The future of mechanical circulatory support for severe cardiogenic shock",
+        "year": "2024",
+        "citations": 9,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:pqnbT2bcN3wC"
+      },
+      {
+        "title": "Left subclavian artery coverage is not associated with neurological deficits in trauma patients undergoing thoracic endovascular repair",
+        "year": "2022",
+        "citations": 9,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=38iwVeUAAAAJ&citation_for_view=38iwVeUAAAAJ:70eg2SAEIzsC"
+      }
+    ]
+  }
 }

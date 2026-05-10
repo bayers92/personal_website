@@ -208,7 +208,13 @@
                   <h3>Publications</h3>
                   <p id="publication-status">Loading recent publications from Google Scholar...</p>
                 </div>
-                <a class="scholar-link" href="https://scholar.google.com/citations?user=38iwVeUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar <i class="fa fa-arrow-right fa-1x"></i></a>
+                <div class="publication-actions">
+                  <div class="publication-sort" aria-label="Sort publications">
+                    <button class="publication-sort-button is-active" type="button" data-publication-sort="newest" aria-pressed="true">Newest</button>
+                    <button class="publication-sort-button" type="button" data-publication-sort="cited" aria-pressed="false">Most cited</button>
+                  </div>
+                  <a class="scholar-link" href="https://scholar.google.com/citations?user=38iwVeUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar <i class="fa fa-arrow-right fa-1x"></i></a>
+                </div>
               </div>
               <ul class="big-list publication-list" id="publication-list" aria-live="polite"></ul>
             </div>

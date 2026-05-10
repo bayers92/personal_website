@@ -5,9 +5,15 @@
   var publicationSources = ["data/publications.json", "php/publications.php"];
   var publicationList = document.getElementById("publication-list");
   var publicationStatus = document.getElementById("publication-status");
+  var sortButtons = document.querySelectorAll("[data-publication-sort]");
   var publicationsPerPage = 10;
   var currentPage = 1;
   var allPublications = [];
+  var publicationsBySort = {
+    newest: [],
+    cited: []
+  };
+  var currentSort = "newest";
   var paginationControls;
 
   function setStatus(message) {
@@ -44,6 +50,68 @@
     link.appendChild(year);
     item.appendChild(link);
     publicationList.appendChild(item);
+  }
+
+  function getCitationCount(publication) {
+    var citationCount = Number(publication.citations);
+    return Number.isFinite(citationCount) ? citationCount : 0;
+  }
+
+  function formatCitationCount(publication) {
+    var citationCount = getCitationCount(publication);
+    return citationCount + (citationCount === 1 ? " citation" : " citations");
+  }
+
+  function updatePublicationStatus() {
+    if (currentSort === "cited") {
+      setStatus("Pulled from Google Scholar, sorted by citation count.");
+      return;
+    }
+
+    setStatus("Pulled from Google Scholar, sorted by publication date.");
+  }
+
+  function getSortedPublications() {
+    var publications = publicationsBySort[currentSort] && publicationsBySort[currentSort].length
+      ? publicationsBySort[currentSort].slice()
+      : allPublications.slice();
+
+    if (currentSort === "cited" && (!publicationsBySort.cited || !publicationsBySort.cited.length)) {
+      publications.sort(function (first, second) {
+        var citationDifference = getCitationCount(second) - getCitationCount(first);
+        if (citationDifference !== 0) {
+          return citationDifference;
+        }
+
+        return Number(second.year || 0) - Number(first.year || 0);
+      });
+    }
+
+    return publications;
+  }
+
+  function updateSortButtons() {
+    Array.prototype.forEach.call(sortButtons, function (button) {
+      var isActive = button.getAttribute("data-publication-sort") === currentSort;
+      button.className = isActive ? "publication-sort-button is-active" : "publication-sort-button";
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  }
+
+  function bindSortControls() {
+    Array.prototype.forEach.call(sortButtons, function (button) {
+      button.addEventListener("click", function () {
+        var nextSort = button.getAttribute("data-publication-sort");
+        if (!nextSort || nextSort === currentSort) {
+          return;
+        }
+
+        currentSort = nextSort;
+        updateSortButtons();
+        updatePublicationStatus();
+        renderPublicationsPage(1);
+      });
+    });
   }
 
   function getPaginationControls() {
@@ -108,12 +176,13 @@
       return;
     }
 
-    var totalPages = Math.max(1, Math.ceil(allPublications.length / publicationsPerPage));
+    var sortedPublications = getSortedPublications();
+    var totalPages = Math.max(1, Math.ceil(sortedPublications.length / publicationsPerPage));
     currentPage = Math.min(Math.max(page, 1), totalPages);
 
     publicationList.innerHTML = "";
 
-    allPublications
+    sortedPublications
       .slice((currentPage - 1) * publicationsPerPage, currentPage * publicationsPerPage)
       .forEach(function (publication) {
         var item = document.createElement("li");
@@ -132,6 +201,10 @@
         year.className = "publication-year";
         year.textContent = publication.year ? "(" + publication.year + ")" : "";
 
+        if (currentSort === "cited") {
+          year.textContent = formatCitationCount(publication);
+        }
+
         link.appendChild(title);
         link.appendChild(year);
         item.appendChild(link);
@@ -142,7 +215,21 @@
   }
 
   function renderPublications(publications) {
-    allPublications = publications;
+    if (Array.isArray(publications)) {
+      allPublications = publications;
+      publicationsBySort.newest = publications;
+      publicationsBySort.cited = [];
+      renderPublicationsPage(1);
+      return;
+    }
+
+    allPublications = publications.publications || [];
+    publicationsBySort.newest = publications.publicationsBySort && publications.publicationsBySort.newest
+      ? publications.publicationsBySort.newest
+      : allPublications;
+    publicationsBySort.cited = publications.publicationsBySort && publications.publicationsBySort.cited
+      ? publications.publicationsBySort.cited
+      : [];
     renderPublicationsPage(1);
   }
 
@@ -183,8 +270,8 @@
 
     fetchPublicationSource(0)
       .then(function (payload) {
-        renderPublications(payload.publications);
-        setStatus("Pulled from Google Scholar, sorted by publication date.");
+        renderPublications(payload);
+        updatePublicationStatus();
       })
       .catch(function () {
         setStatus("Could not load publication data automatically.");
@@ -192,5 +279,7 @@
       });
   }
 
+  bindSortControls();
+  updateSortButtons();
   loadScholarPublications();
 }());
