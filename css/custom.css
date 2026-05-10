@@ -511,6 +511,49 @@ a:focus {
   white-space: nowrap;
 }
 
+.publication-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  padding-top: 22px;
+}
+
+.publication-page-button {
+  min-width: 96px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #ffffff;
+  color: var(--ink);
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.publication-page-button:hover,
+.publication-page-button:focus {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.publication-page-button:disabled {
+  cursor: default;
+  border-color: var(--line);
+  background: #f4f6f7;
+  color: #a3adb4;
+}
+
+.publication-page-label {
+  color: var(--muted);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
 .project_img,
 .giphy-embed.project_img {
   width: 100%;
@@ -750,6 +793,15 @@ a:focus {
   .publication-year {
     display: block;
     margin-top: 8px;
+  }
+
+  .publication-pagination {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .publication-page-button {
+    min-width: 86px;
   }
 
   .scholar-link {

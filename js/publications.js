@@ -5,6 +5,10 @@
   var publicationSources = ["data/publications.json", "php/publications.php"];
   var publicationList = document.getElementById("publication-list");
   var publicationStatus = document.getElementById("publication-status");
+  var publicationsPerPage = 10;
+  var currentPage = 1;
+  var allPublications = [];
+  var paginationControls;
 
   function setStatus(message) {
     if (publicationStatus) {
@@ -18,6 +22,7 @@
     }
 
     publicationList.innerHTML = "";
+    renderPaginationControls(0);
 
     var item = document.createElement("li");
     item.className = "publication-item publication-empty";
@@ -41,35 +46,104 @@
     publicationList.appendChild(item);
   }
 
-  function renderPublications(publications) {
+  function getPaginationControls() {
+    if (!publicationList) {
+      return null;
+    }
+
+    if (!paginationControls) {
+      paginationControls = document.createElement("nav");
+      paginationControls.className = "publication-pagination";
+      paginationControls.setAttribute("aria-label", "Publication pages");
+      publicationList.insertAdjacentElement("afterend", paginationControls);
+    }
+
+    return paginationControls;
+  }
+
+  function renderPaginationControls(totalPages) {
+    var controls = getPaginationControls();
+    if (!controls) {
+      return;
+    }
+
+    controls.innerHTML = "";
+
+    if (totalPages <= 1) {
+      controls.hidden = true;
+      return;
+    }
+
+    controls.hidden = false;
+
+    var previousButton = document.createElement("button");
+    previousButton.type = "button";
+    previousButton.className = "publication-page-button";
+    previousButton.textContent = "Previous";
+    previousButton.disabled = currentPage === 1;
+    previousButton.addEventListener("click", function () {
+      renderPublicationsPage(currentPage - 1);
+    });
+
+    var pageLabel = document.createElement("span");
+    pageLabel.className = "publication-page-label";
+    pageLabel.textContent = "Page " + currentPage + " of " + totalPages;
+
+    var nextButton = document.createElement("button");
+    nextButton.type = "button";
+    nextButton.className = "publication-page-button";
+    nextButton.textContent = "Next";
+    nextButton.disabled = currentPage === totalPages;
+    nextButton.addEventListener("click", function () {
+      renderPublicationsPage(currentPage + 1);
+    });
+
+    controls.appendChild(previousButton);
+    controls.appendChild(pageLabel);
+    controls.appendChild(nextButton);
+  }
+
+  function renderPublicationsPage(page) {
     if (!publicationList) {
       return;
     }
 
+    var totalPages = Math.max(1, Math.ceil(allPublications.length / publicationsPerPage));
+    currentPage = Math.min(Math.max(page, 1), totalPages);
+
     publicationList.innerHTML = "";
 
-    publications.forEach(function (publication) {
-      var item = document.createElement("li");
-      item.className = "publication-item";
+    allPublications
+      .slice((currentPage - 1) * publicationsPerPage, currentPage * publicationsPerPage)
+      .forEach(function (publication) {
+        var item = document.createElement("li");
+        item.className = "publication-item";
 
-      var link = document.createElement("a");
-      link.href = publication.url || scholarProfileUrl;
-      link.target = "_blank";
-      link.rel = "noopener";
+        var link = document.createElement("a");
+        link.href = publication.url || scholarProfileUrl;
+        link.target = "_blank";
+        link.rel = "noopener";
 
-      var title = document.createElement("span");
-      title.className = "publication-title";
-      title.textContent = publication.title;
+        var title = document.createElement("span");
+        title.className = "publication-title";
+        title.textContent = publication.title;
 
-      var year = document.createElement("span");
-      year.className = "publication-year";
-      year.textContent = publication.year ? "(" + publication.year + ")" : "";
+        var year = document.createElement("span");
+        year.className = "publication-year";
+        year.textContent = publication.year ? "(" + publication.year + ")" : "";
 
-      link.appendChild(title);
-      link.appendChild(year);
-      item.appendChild(link);
-      publicationList.appendChild(item);
-    });
+        link.appendChild(title);
+        link.appendChild(year);
+        item.appendChild(link);
+        publicationList.appendChild(item);
+      });
+
+    renderPaginationControls(totalPages);
+  }
+
+  function renderPublications(publications) {
+    allPublications = publications;
+    renderPublicationsPage(1);
   }
 
   function fetchPublicationSource(sourceIndex) {
