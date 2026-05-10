@@ -376,6 +376,9 @@ a:focus {
 .logos img {
   max-height: 78px;
   width: auto;
+  padding: 10px 16px;
+  background: #ffffff;
+  box-sizing: border-box;
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.78;
@@ -553,43 +556,54 @@ a:focus {
 .publication-pagination {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 18px;
-  padding-top: 22px;
+  justify-content: center;
+  gap: 14px;
+  padding-top: 28px;
 }
 
 .publication-page-button {
-  min-width: 96px;
-  height: 38px;
-  border: 1px solid var(--line);
-  border-radius: 0;
-  background: #ffffff;
-  color: var(--ink);
+  min-width: 104px;
+  height: 42px;
+  border: 1px solid rgba(23, 32, 38, 0.2);
+  border-radius: 6px;
+  background: var(--ink);
+  color: #ffffff;
   font-family: "Montserrat", "Helvetica Neue", sans-serif;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+  box-shadow: 0 10px 24px rgba(23, 32, 38, 0.12);
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
 .publication-page-button:hover,
 .publication-page-button:focus {
-  border-color: var(--ink);
-  background: var(--ink);
+  border-color: #000000;
+  background: #000000;
   color: #ffffff;
+  box-shadow: 0 14px 30px rgba(23, 32, 38, 0.16);
+  transform: translateY(-1px);
 }
 
 .publication-page-button:disabled {
   cursor: default;
-  border-color: var(--line);
-  background: #f4f6f7;
-  color: #a3adb4;
+  border-color: #d8dee2;
+  background: #f7f9fa;
+  color: #96a2aa;
+  box-shadow: none;
+  transform: none;
 }
 
 .publication-page-label {
-  color: var(--muted);
+  min-width: 94px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--ink);
   font-size: 14px;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -621,9 +635,7 @@ a:focus {
 }
 
 .contact-grid {
-  display: flex;
-  align-items: stretch;
-  gap: 36px;
+  display: block;
   margin-left: 0;
   margin-right: 0;
 }
@@ -635,7 +647,8 @@ a:focus {
 
 .contact-copy {
   display: flex;
-  min-height: 420px;
+  max-width: 760px;
+  min-height: 0;
   flex-direction: column;
   justify-content: center;
   padding: 44px 0;
