@@ -2,7 +2,7 @@
   "use strict";
 
   var scholarProfileUrl = "https://scholar.google.com/citations?hl=en&user=38iwVeUAAAAJ&view_op=list_works&sortby=pubdate";
-  var publicationEndpoint = "php/publications.php";
+  var publicationSources = ["data/publications.json", "php/publications.php"];
   var publicationList = document.getElementById("publication-list");
   var publicationStatus = document.getElementById("publication-status");
 
@@ -72,6 +72,32 @@
     });
   }
 
+  function fetchPublicationSource(sourceIndex) {
+    return fetch(publicationSources[sourceIndex], {
+      headers: {
+        "Accept": "application/json"
+      }
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Publication source failed");
+        }
+        return response.json();
+      })
+      .then(function (payload) {
+        if (!payload.publications || !payload.publications.length) {
+          throw new Error("No publications returned");
+        }
+        return payload;
+      })
+      .catch(function () {
+        if (sourceIndex + 1 < publicationSources.length) {
+          return fetchPublicationSource(sourceIndex + 1);
+        }
+        throw new Error("No publication source loaded");
+      });
+  }
+
   function loadScholarPublications() {
     if (!window.fetch) {
       setStatus("Your browser could not load publications automatically.");
@@ -81,26 +107,13 @@
 
     setStatus("Loading recent publications from Google Scholar...");
 
-    fetch(publicationEndpoint, {
-      headers: {
-        "Accept": "application/json"
-      }
-    })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("Publication endpoint failed");
-        }
-        return response.json();
-      })
+    fetchPublicationSource(0)
       .then(function (payload) {
-        if (!payload.publications || !payload.publications.length) {
-          throw new Error("No publications returned");
-        }
         renderPublications(payload.publications);
         setStatus("Pulled from Google Scholar, sorted by publication date.");
       })
       .catch(function () {
-        setStatus("Could not load Google Scholar automatically from this server.");
+        setStatus("Could not load publication data automatically.");
         renderEmptyState("View the latest publication list on Google Scholar");
       });
   }
