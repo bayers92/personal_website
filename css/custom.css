@@ -621,7 +621,28 @@ a:focus {
   overflow: hidden;
 }
 
+.contact-section {
+  position: relative;
+  background: #f4f6f7 !important;
+  isolation: isolate;
+}
+
+.contact-section:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("../images/contact-longfellow-bridge.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .contact-inner {
+  position: relative;
+  z-index: 1;
   max-width: 1180px;
 }
 
