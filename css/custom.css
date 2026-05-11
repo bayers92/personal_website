@@ -695,6 +695,13 @@ a:focus {
   color: var(--ink);
 }
 
+.contact-email {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+}
+
 .contact-email-button {
   width: fit-content;
   min-height: 46px;
@@ -710,6 +717,12 @@ a:focus {
   text-transform: uppercase;
   box-shadow: 0 12px 26px rgba(23, 32, 38, 0.14);
   transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.contact-email-address {
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .contact-email-button:hover,

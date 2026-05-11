@@ -12,15 +12,22 @@
     var buttons = document.querySelectorAll("[data-email-user][data-email-domain]");
 
     Array.prototype.forEach.call(buttons, function (button) {
-      button.addEventListener("click", function () {
-        var user = decodeRot13(button.getAttribute("data-email-user") || "");
-        var domain = decodeRot13(button.getAttribute("data-email-domain") || "");
+      var user = decodeRot13(button.getAttribute("data-email-user") || "");
+      var domain = decodeRot13(button.getAttribute("data-email-domain") || "");
+      var email = user && domain ? user + "@" + domain : "";
+      var contactEmail = button.parentNode;
+      var display = contactEmail ? contactEmail.querySelector("[data-email-display]") : null;
 
-        if (!user || !domain) {
+      if (display && email) {
+        display.textContent = email;
+      }
+
+      button.addEventListener("click", function () {
+        if (!email) {
           return;
         }
 
-        window.location.href = "mailto:" + user + "@" + domain;
+        window.location.href = "mailto:" + email;
       });
     });
   }
