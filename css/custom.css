@@ -674,6 +674,31 @@ a:focus {
   color: var(--ink);
 }
 
+.contact-email-button {
+  width: fit-content;
+  min-height: 46px;
+  border: 1px solid rgba(23, 32, 38, 0.18);
+  border-radius: 6px;
+  background: var(--ink);
+  color: #ffffff;
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0 18px;
+  text-transform: uppercase;
+  box-shadow: 0 12px 26px rgba(23, 32, 38, 0.14);
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.contact-email-button:hover,
+.contact-email-button:focus {
+  border-color: #000000;
+  background: #000000;
+  box-shadow: 0 16px 32px rgba(23, 32, 38, 0.18);
+  transform: translateY(-1px);
+}
+
 .contact-actions {
   display: flex;
   flex-wrap: wrap;
